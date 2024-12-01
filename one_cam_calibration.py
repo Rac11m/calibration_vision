@@ -7,7 +7,7 @@ from pathlib import Path
 Path("imagesOneCam").mkdir(parents=True, exist_ok=True)
 
 # IP camera stream
-ip_cam = "http://192.168.51.81:8080/video"
+ip_cam = "http://192.168.137.27:8080/video"
 
 # Open the camera stream
 cam = cv2.VideoCapture(ip_cam)
