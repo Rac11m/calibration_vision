@@ -9,12 +9,12 @@ Path("imagesTwoCams").mkdir(parents=True, exist_ok=True)
 
 # Define IP camera streams
 ip_camL = "http://192.168.137.27:8080/video"
-ip_camR = "http://192.168.1.36:8080/video"
+ip_camR = "http://192.168.137.21:8080/video"
 
 # Initialize cameras
 CamL = cv2.VideoCapture(ip_camL)
-# CamR = cv2.VideoCapture(ip_camR)
-CamR = cv2.VideoCapture(0)
+CamR = cv2.VideoCapture(ip_camR)
+# CamR = cv2.VideoCapture(0)
 
 
 # ID for saved images
